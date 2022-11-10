@@ -16,15 +16,16 @@
                     Developing in CS
                 </h1>
                 <span>
-                    The blog that follows the journey of a computer science major in college
+                    A look into the life of a computer science major
                 </span>
             </div>
-            <div class="navbar">
+            <div id="navbar">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blogs</a></li>
-                    <li><a href="">Contact Me</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </div>
@@ -36,38 +37,40 @@
             </div>
             <div class="right">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sunt corporis, velit nulla amet unde facilis. Magni quis unde nobis adipisci illum consequatur, eveniet ex ad molestias corporis maiores labore officiis. Suscipit, et consectetur assumenda expedita sint cumque enim nostrum.</p>
+                <a href="" class="button">Read More</a>
             </div>
         </div>
     </section>
-    <section id="recent-posts">
+    <section id="suggested-read">
         <div class="container">
             <h2>Suggested Read</h3>
         </div>
         <div class="container">
-            <div class="post-card">
-                <h1>Lorem, ipsum dolor.</h1>
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum impedit perferendis facilis distinctio ipsum laudantium fugit ullam delectus animi eius adipisci, aspernatur dolorem possimus explicabo totam corrupti, aperiam voluptatibus ad ratione veritatis, sunt nesciunt quidem quo. Nesciunt, eos odit laboriosam provident fuga maiores. Voluptatibus blanditiis dolor sunt perferendis. Reiciendis!</p>
-                <a href="" class="button">Read More</a>
+            <div class="card">
+                <div class="card-content">
+                    <h3>Title or sum</h3>
+                    <span>By me on Jan 1, 3074</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorum expedita sint nisi nulla quas tempora unde minus voluptatibus aliquam voluptatem, magni officia accusamus necessitatibus.</p>
+                    <a href="" class="button">See Post</a>
+                </div>
+                <img src="/img/Home Background.jpg" alt="" class="card-img">
             </div>
-            <div class="post-card">
-                <h1>Lorem, ipsum dolor.</h1>
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum impedit perferendis facilis distinctio ipsum laudantium fugit ullam delectus animi eius adipisci, aspernatur dolorem possimus explicabo totam corrupti, aperiam voluptatibus ad ratione veritatis, sunt nesciunt quidem quo. Nesciunt, eos odit laboriosam provident fuga maiores. Voluptatibus blanditiis dolor sunt perferendis. Reiciendis!</p>
-                <a href="" class="button">Read More</a>
-            </div>
-            <div class="post-card">
-                <h1>Lorem, ipsum dolor.</h1>
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum impedit perferendis facilis distinctio ipsum laudantium fugit ullam delectus animi eius adipisci, aspernatur dolorem possimus explicabo totam corrupti, aperiam voluptatibus ad ratione veritatis, sunt nesciunt quidem quo. Nesciunt, eos odit laboriosam provident fuga maiores. Voluptatibus blanditiis dolor sunt perferendis. Reiciendis!</p>
-                <a href="" class="button">Read More</a>
-            </div>
-            <div class="post-card">
-                <h1>Lorem, ipsum dolor.</h1>
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa voluptatum impedit perferendis facilis distinctio ipsum laudantium fugit ullam delectus animi eius adipisci, aspernatur dolorem possimus explicabo totam corrupti, aperiam voluptatibus ad ratione veritatis, sunt nesciunt quidem quo. Nesciunt, eos odit laboriosam provident fuga maiores. Voluptatibus blanditiis dolor sunt perferendis. Reiciendis!</p>
-                <a href="" class="button">Read More</a>
-            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Any questions? Here is how you can reach me</p>
+            <form method="POST" data-netlify="true">
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name" name="Name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject" name="Subject">
+                    <input type="email" class="text-input email-input" placeholder="Email Address" name="Email">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number" name="Phone">
+                    <textarea class="text-input message-input" placeholder="Enter message" name="Message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
 </body>
