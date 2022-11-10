@@ -1,0 +1,221 @@
+:root{
+    --primary-bg-color: white;
+    --secondary-bg-color: #f1f1f1;
+    --primary-color: #333;
+    --secondary-color: #666;
+    
+    --hover-color: #70bae2;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--primary-bg-color);
+    scroll-behavior: smooth;
+    color: var(--primary-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Home */
+#home .title{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#home .title h1,
+#home .title span {
+    z-index: 1;
+    color:var(--primary-color);
+    padding: 10px;
+    text-align: center;
+  }
+
+#home .title h1{
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+#home .title span{
+    padding: 5px;
+    font-size: 20px;
+}
+/* Navbar */
+.navbar{
+    height: 20px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.navbar ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: var(--secondary-color) 1px solid;
+    font-size: 15px;
+}
+
+.navbar ul li{
+    padding: 10px;
+}
+
+.navbar ul li a{
+    transition: 0.1s;
+    padding: 11px;
+}
+
+.navbar ul li a:hover{
+    color:var(--hover-color);
+    border-bottom: var(--hover-color) solid 1px;
+}
+
+/* About Segment */
+#about-segment{
+    width: 100%;
+    height: 350px;
+}
+
+#about-segment .container{
+    display: flex;
+    padding: 50px 0;
+    border-top: var(--secondary-color) 1px solid;
+    border-bottom: var(--secondary-color) 1px solid;
+}
+
+#about-segment .container .left,
+#about-segment .container .right{
+    padding: 0px 20px;
+    
+}
+
+#about-segment .container .left{
+    border-right: var(--secondary-color) solid 1px;
+    display: flex;
+    align-items: center;
+}
+
+#about-segment .container .left img{
+    background-position: center;
+    width: 100%;
+}
+
+#about-segment .container .right{
+    display: flex;
+    align-items: center;
+}
+
+#about-segment .container .right p{
+    width: 100%;
+    text-align: center;
+    text-justify:distribute;
+}
+
+/* Recent Posts */
+#recent-posts{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recent-posts h2{
+    padding: 15px 20px;
+}
+
+#recent-posts .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 20px auto;
+    padding-bottom: 30px;
+    border-bottom: var(--secondary-color) 1px solid;
+}
+
+#recent-posts .container:first-child{
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#recent-posts .container .post-card{
+    height: 450px;
+    margin: 30px 15px;
+    border: var(--secondary-color) 1px solid;
+    background-color:var(--secondary-bg-color);
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+#recent-posts .container .post-card:hover{
+    background-color: var(--primary-bg-color);
+    border-radius: 10px;
+}
+
+#recent-posts .container .post-card:hover a{
+    opacity: 100%;
+}
+
+#recent-posts .container .post-card h1{
+    padding: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#recent-posts .container .post-card span{
+    padding: 0 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: fit-content;
+    font-size: 12px;
+}
+
+#recent-posts .container .post-card p{
+    padding: 0 15px;
+    font-size: 17px;
+    text-align:center;
+}
+
+#recent-posts .container .post-card a{
+    width: fit-content;
+    align-self: flex-end;
+    margin: auto 30px 25px 0;
+    padding: 5px;
+    border: var(--secondary-color) 1px solid;
+    border-radius: 8px; 
+    opacity: 0%;
+    transition: 0.2s;
+    font-size: 17px;
+}
+
+#recent-posts .container .post-card a:hover{
+    background-color:var(--primary-color);
+    color: var(--secondary-bg-color);
+}

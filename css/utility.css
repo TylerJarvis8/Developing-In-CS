@@ -1,0 +1,19 @@
+/* Container */
+.container{
+    height: 100%;
+    width: 50%;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+.container .left{
+    width: 50%;
+    height: 100%;
+    justify-self: left;
+}
+
+.container .right{
+    width: 50%;
+    height: 100%;
+    justify-self: right;
+}
